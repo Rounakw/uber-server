@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/users", userRoutes);
 app.use("/captains", captainRoutes);
 app.get("/", (req, res) => {
-    res.send("Welcome to the backend server");
+    res.send("Welcome to the backend server of UBER2308");
 });
 
 module.exports = app;
