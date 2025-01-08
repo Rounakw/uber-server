@@ -10,9 +10,6 @@ require('./db/db')();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.get('/', () => {
-    res.send('Hello World')
-})
 app.use("/users", userRoutes);
 app.use("/captains", captainRoutes);
 app.get("/", (req, res) => {
